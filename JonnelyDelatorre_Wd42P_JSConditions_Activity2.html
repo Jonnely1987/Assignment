@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input1 = prompt("Enter 1st Number");
+        let input2 = prompt("Enter 2nd Number");
+        let input3 = prompt("Enter 3rd Number");
+
+        let number1 = parseInt(input1);
+        let number2 = parseInt(input2);
+        let number3 = parseInt(input3);
+
+        let result = "";
+        if(number1 > number2 || number1 > number3){
+            result = "Number1 is the largest which is " + number1;
+        }
+
+        if(number2 > number1 || number2 > number3){
+            result = "Number2 is the largest which is" + number2;
+
+        }
+        if(number3 > number1 ||number3 > number2){
+            result = "Number2 is the largest which is" + number3;
+
+        }
+        
+        console.log(result)
+        document.write(result)
+
+
+
+
+    </script>
+    
+</body>
+</html>

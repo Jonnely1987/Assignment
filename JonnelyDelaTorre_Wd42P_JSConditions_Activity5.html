@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let month = prompt("Please input number of a month");
+        let year = prompt("Please Input a Year");
+
+        if(month == 0){
+            alert("INVALID");
+        }else if(month > 12){
+            alert("INVALID");
+        }else if(month == 2 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)){
+            alert("29 Days")
+        }else if(month == 2 && (0 == year % 4) && (0 != year % 100) || (0 == year % 400)){
+            alert("30 Days")
+        }else{
+            alert("31 Days")
+        }
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
